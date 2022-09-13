@@ -38,7 +38,7 @@ class AllBooks extends Component {
                   .includes(this.state.query.toLowerCase())
               })
               .map((book) => (
-                <Col key={book.asin}>
+                <Col md={4} key={book.asin}>
                   <SingleBook
                     book={book}
                     loadingOn={this.props.loadingOn}

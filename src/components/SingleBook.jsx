@@ -19,10 +19,7 @@ class SingleBook extends Component {
   }
   render() {
     return (
-      <Card
-        style={{ width: "18rem" }}
-        className={this.state.selected ? "bg-warning" : ""}
-      >
+      <Card className={this.state.selected ? "bg-warning" : ""}>
         <Card.Img
           variant="top"
           src={this.props.book.img}
